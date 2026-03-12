@@ -20,7 +20,7 @@ registerChatSocket(io);
 
 server.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`Server listening on http://localhost:${port}`);
+  console.log(`Server listening on ${port}`);
 });
 
 export { server, io };

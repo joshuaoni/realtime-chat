@@ -2,7 +2,6 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import type { Message } from "../types";
 import { fetchMessages, postMessage } from "../services/api";
 import {
-  getSocket,
   sendSocketMessage,
   subscribeToMessages,
   sendTyping,

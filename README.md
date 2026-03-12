@@ -149,13 +149,9 @@ cd realtime-chat
 
 #### 2. Environment variables
 
-Copy `.env.example` to `.env` in the project root and edit if needed:
+Copy `.env.example` to `.env` in both `src/` (frontend) and `server/` (backend) 
 
-```bash
-cp .env.example .env
-```
-
-Ensure `DATABASE_URL` points to a running PostgreSQL instance.
+Ensure `DATABASE_URL` points to a running PostgreSQL instance and `VITE_API_BASE_URL` points to the same PORT you set in `server/.env`.
 
 #### 3. Start PostgreSQL
 
@@ -169,6 +165,10 @@ docker run --name kairos-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD
 **Option B – Local Postgres**
 
 Create a `chat_app` database and update `DATABASE_URL` in `.env` to match your credentials.
+
+**Option C – Remote Postgres**
+
+Use existing remote postgres URI.
 
 #### 4. Backend – install, migrate, and run
 
@@ -186,7 +186,7 @@ npx prisma generate
 npm run dev
 ```
 
-The backend runs at `http://localhost:4000`.
+The backend runs at `http://localhost:<PORT>`.
 
 #### 5. Frontend – install and run
 

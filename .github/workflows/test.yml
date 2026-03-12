@@ -40,11 +40,11 @@ jobs:
 
       - name: Install frontend dependencies
         working-directory: ./src
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Install backend dependencies
         working-directory: ./server
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Run Prisma migrations
         working-directory: ./server

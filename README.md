@@ -174,7 +174,7 @@ Use existing remote postgres URI.
 
 ```bash
 cd server
-npm install
+npm install --legacy-peer-deps
 
 # Run Prisma migrations
 npx prisma migrate dev --name init
@@ -192,7 +192,7 @@ The backend runs at `http://localhost:<PORT>`.
 
 ```bash
 cd src
-npm install
+npm install --legacy-peer-deps
 npm run dev
 ```
 

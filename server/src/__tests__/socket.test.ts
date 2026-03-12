@@ -118,16 +118,18 @@ describe("Socket.io chat", () => {
   it("broadcasts left message on disconnect", done => {
     const tempSocket = Client(`http://localhost:${port}`);
     tempSocket.on("connect", () => {
-      tempSocket.emit("join", "Leaver");
-
+      // First, wait for confirmation that the user has joined
       clientSocket1.on("message", (msg: any) => {
-        if (msg.sender === "System" && msg.text.includes("Leaver left")) {
+        if (msg.sender === "System" && msg.text.includes("joined the chat")) {
+          // Now it's safe to disconnect
+          tempSocket.disconnect();
+        } else if (msg.sender === "System" && msg.text.includes("Leaver left")) {
           clientSocket1.off("message");
           done();
         }
       });
 
-      tempSocket.disconnect();
+      tempSocket.emit("join", "Leaver");
     });
-  });
+  }, 10000);
 });

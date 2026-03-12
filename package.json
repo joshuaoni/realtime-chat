@@ -1,0 +1,14 @@
+{
+  "name": "real-time-chat-app-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "echo \"Run lint in src and server\" && cd src && npm run lint && cd ../server && npm run lint",
+    "test": "echo \"Run tests in src and server\" && cd src && npm test && cd ../server && npm test",
+    "build": "cd src && npm run build && cd ../server && npm run build"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.5"
+  }
+}

@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1773327569998" clover="3.2.0">
-  <project timestamp="1773327569999" name="All files">
-    <metrics statements="78" coveredstatements="73" conditionals="11" coveredconditionals="9" methods="13" coveredmethods="12" elements="102" coveredelements="94" complexity="0" loc="78" ncloc="78" packages="6" files="8" classes="8"/>
+<coverage generated="1773331385585" clover="3.2.0">
+  <project timestamp="1773331385585" name="All files">
+    <metrics statements="83" coveredstatements="69" conditionals="12" coveredconditionals="9" methods="13" coveredmethods="12" elements="108" coveredelements="90" complexity="0" loc="83" ncloc="83" packages="7" files="9" classes="9"/>
     <package name="src">
-      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.ts" path="C:\Users\HP\Desktop\dev\kairos\server\src\app.ts">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-      </file>
-      <file name="prisma.ts" path="C:\Users\HP\Desktop\dev\kairos\server\src\prisma.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="prisma.ts" path="C:\Users\HP\Desktop\dev\kairos\server\src\prisma.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.config">
+      <metrics statements="9" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="env.ts" path="C:\Users\HP\Desktop\dev\kairos\server\src\config\env.ts">
+        <metrics statements="9" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
